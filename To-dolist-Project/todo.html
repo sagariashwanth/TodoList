@@ -2,31 +2,31 @@
 <html>
 <head>
     <title>ToDoList</title>
+    <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="todo.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300&display=swap" rel="stylesheet">
 </head>  
 <body>
-    <div class="container">
-        <div class="container_header">
-            <h1>Bucket List</h1>
-        </div>
-        <div class="container_description">
-            <p id="demo">Go on, add or remove items from the list and behold some sweet css animations</p>
-            <input class="list-input" type="text" placeholder="Add Todo" id="userinput">
-            <span onclick=newElement() class="addBtn">Add</span> 
-            <ul class="list">
-                <li>Hi</li>
-                <li>Hello</li>
-                <li>Welcome</li>
-                <li>How r you</li>
-                <li>wtsup?</li>
-            </ul>
-        </div>
-        
-        <script type="text/javascript" src="todo.js"></script>
-        </div>
     
+    <header>
+        <h1>Bucket List</h1>
+        <p>Go on, add or remove items from the list and behold some sweet css animations</p> 
+
+        <input type="text" placeholder="Things to do..." id="userinput">
+        <span class="addBtn" id="add_button">Add</span>
+    </header>
+        
+    <ul class="list">
+        <li><i class="far fa-trash-alt"></i>Hi</li>
+        <li><i class="far fa-trash-alt"></i>Get a job</li>
+        <li><i class="far fa-trash-alt"></i>Earn more money</li>
+        <li><i class="far fa-trash-alt"></i>Enjoy life</li>
+        <li><i class="far fa-trash-alt"></i>visit Maldives</li>
+        
+    </ul>    
+    <script type="text/javascript" src="todo.js"></script>
 </body>    
 </html>
