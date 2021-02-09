@@ -5,28 +5,34 @@
     <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="todo.css">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300&display=swap" rel="stylesheet">
 </head>  
 <body>
     
-    <header>
-        <h1>Bucket List</h1>
-        <p>Go on, add or remove items from the list and behold some sweet css animations</p> 
-
-        <input type="text" placeholder="Things to do..." id="userinput">
-        <span class="addBtn" id="add_button">Add</span>
-    </header>
+    <div class="container">
+        <header>Bucket List</header>
+        <!-- <p>Go on, add or remove items from the list and behold some sweet css animations</p>  -->
+        <div class="inputField">
+            <input type="text" placeholder="Add your new ToDo...">
+        <button><i class="fas fa-plus-square"></i></button>
+        </div>
+        <ul class="list">
+            <li><i class="far fa-trash-alt"></i>Hi</li>
+            <li><i class="far fa-trash-alt"></i>Get a job</li>
+            <li><i class="far fa-trash-alt"></i>Earn more money</li>
+            <li><i class="far fa-trash-alt"></i>Enjoy life</li>
+            <li><i class="far fa-trash-alt"></i>visit Maldives</li>
+        </ul> 
+        <div class="footer">
+            <span>You have <span class="pending Tasks"></span> pending tasks</span>
+            <button>Clear All</button>
+        </div>  
+    </div>
         
-    <ul class="list">
-        <li><i class="far fa-trash-alt"></i>Hi</li>
-        <li><i class="far fa-trash-alt"></i>Get a job</li>
-        <li><i class="far fa-trash-alt"></i>Earn more money</li>
-        <li><i class="far fa-trash-alt"></i>Enjoy life</li>
-        <li><i class="far fa-trash-alt"></i>visit Maldives</li>
-        
-    </ul>    
+    
     <script type="text/javascript" src="todo.js"></script>
 </body>    
 </html>
