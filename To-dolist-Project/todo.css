@@ -72,7 +72,7 @@ body {
 }
 .container .list {
   max-height: 250px;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 .list li {
   position: relative;
@@ -89,18 +89,20 @@ body {
 .list li .far {
   position: absolute;
   right: -45px;
-  background: #e74c3c;
+  background: #8e49e8;
   width: 45px;
+  height: 45px;
   text-align: center;
   color: #fff;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
   transition: all 0.2s ease;
+  font-size: 40px;
 }
 .list li:hover .far {
   right: 0px;
 }
-.container .footer {
+/* .container .footer {
   display: flex;
   width: 100%;
   margin-top: 20px;
@@ -126,4 +128,4 @@ body {
 .footer button.active {
   opacity: 1;
   pointer-events: auto;
-}
+} */
