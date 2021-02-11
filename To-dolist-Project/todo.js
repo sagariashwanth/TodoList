@@ -8,10 +8,25 @@ function inputLength(){
 }
 
 function createListElement() {
-	var li = document.createElement("li");
-	li.appendChild(document.createTextNode(input.value));
-	ul.appendChild(li);
-	input.value = "";
+    
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode(input.value));
+    // li.appendChild('<i class="far fa-trash-alt fa-2x"></i>');
+    ul.appendChild(li);
+    input.value = "";
+
+    var i = document.createElement("i");
+    i.className = "far fa-trash-alt";
+    li.appendChild(i);
+
+    for(var i=0; i< trash.length; i++){
+        trash[i].onclick = function(){
+            var div = this.parentElement;
+            div.style.display = "none";
+        }
+    }
+     
+
 }
 
 
